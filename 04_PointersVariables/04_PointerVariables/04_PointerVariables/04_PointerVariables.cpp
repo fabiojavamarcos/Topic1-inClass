@@ -36,7 +36,7 @@ void demoPointerVariable()
 
 }
 
-int demoArraysAndPointers() {
+void demoArraysAndPointers() {
     int array[] = { 1, 2, 3, 4, 5 };
     int* ptr = &array[0];
 
@@ -62,7 +62,6 @@ int demoArraysAndPointers() {
     }
     std::cout << std::endl;
 
-    return 0;
 }
 
 int main() {

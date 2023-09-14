@@ -89,7 +89,10 @@ void arrayOutOfBoundsExample() {
 
 // Example 2: Incorrect usage of a vector
 void incorrectVectorUsageExample() {
-    vector<int> numbers;
+    //vector<int> numbers;
+    vector<int> numbers{ 10, 20, 30 };
+  
+    //vector<int> vect2(numbers.begin(), numbers.end());
 
     // Attempting to access an element without adding any elements to the vector
     int value = numbers[0];  // Accessing an empty vector
