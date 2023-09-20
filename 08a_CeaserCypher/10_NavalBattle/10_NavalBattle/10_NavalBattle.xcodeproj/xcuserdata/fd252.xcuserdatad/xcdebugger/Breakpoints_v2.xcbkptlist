@@ -1,40 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   uuid = "8EA48107-9993-46C4-890E-5B78EA27BA76"
+   uuid = "A1E61E71-2501-431F-BE60-555BB256CB74"
    type = "1"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6AF75B1D-8051-4E25-8DB6-2AA47E033221"
+            uuid = "0047A150-0EFA-4421-8FB8-7184F0DCF356"
             shouldBeEnabled = "No"
-            nameForDebugger = "st"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "08_CeaserCypher/Runner.cpp"
+            filePath = "10_NavalBattle/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "Runner::run()"
-            landmarkType = "7">
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AE3D2BF5-0217-4133-8931-0B24FCD69277"
+            uuid = "17113B69-C522-4FB3-B653-0AB25AE80FC6"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "08_CeaserCypher/Runner.cpp"
+            filePath = "10_NavalBattle/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "Runner::run()"
-            landmarkType = "7">
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -15,11 +15,12 @@ char charCypher(char ch, int key)
 {
     if (!isalpha(ch))
         return ch;
-    cout << "ch:" << ch << endl;
-    cout << "key:" << key << endl;
+    //cout << "ch:" << ch << endl;
+    //cout << "key:" << key << endl;
     char offset = isupper(ch) ? 'A' : 'a';
-    cout << "offset:" << offset << endl;
-    return (char)((((ch + key) - offset) % AlphaLength) + offset);
+    //cout << "offset:" << offset << endl;
+    char res = (char)((((ch + key) - offset) % AlphaLength) + offset);
+    return res;
 }
 
 int main(int argc, const char * argv[]) {
@@ -31,12 +32,15 @@ int main(int argc, const char * argv[]) {
     cin >> key;
 
     char ch = charCypher('A', key);
-    cout << " ch: " << ch << endl;
-    
+    cout << " encrypted ch: " << ch << endl;
+    ch = charCypher(ch, AlphaLength - key);
+    cout << " decrypted ch: " << ch << endl;
+  
     for (char ch = 'A'; ch <= 'Z'; ch++) {
         char enCh = charCypher(ch, key);
         cout << ch << " Encrypted: " << enCh;
-        cout << " Decrypted: " << charCypher(enCh, AlphaLength - key) << endl;
+        char res = charCypher(enCh, AlphaLength - key);
+        cout << " Decrypted: " << res << endl;
 
     }
 
