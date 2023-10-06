@@ -61,11 +61,11 @@ int main(int argc, const char * argv[]) {
     
     cout << "number of hits !!!" << hits << endl;
     
-    // update the code to have 3 fires
+    // update the code to have 3 computer fires
     
     // check if the destroyer was sunk
     
-    // create a cruiser with 3 positions
+    // create a cruiser with 3 positions in length
     
     // check for repeated fire (same position)
     

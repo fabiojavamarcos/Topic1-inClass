@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <string>
+#include <fstream>
 
 #include "07_StringExample.hpp"
 
@@ -48,5 +49,45 @@ int main() {
 
     std::cout << "Full message: " << fullName << std::endl;
 
+    int i = 'a';
+    std::cout << i;
+    
+    char c = 97;
+    std::cout << c << std::endl;
+    
+    std::string city;
+    std::cout << "Enter a city:";
+    std::cin >> city;
+    std::cout << "you typed:"<< city << std::endl;
+    
+    std::ofstream output;
+
+      // Create a file
+      output.open("/Users/fd252/Documents/GitHub/Topic1-inClass/numbers.txt");
+
+      // Write numbers
+      output << 95 << " " << 56 << " " << 34;
+
+      // Close file
+      output.close();
+
+      std::cout << "Done" << std::endl;
+    
+      std::ifstream input;
+
+      // Open a file
+      input.open("numbers.txt");
+
+      int score1, score2, score3;
+
+      // Read data
+      input >> score1;
+      input >> score2;
+      input >> score3;
+
+      std::cout << "Total score is " << score1 + score2 + score3 << std::endl;
+
+      // Close file
+      input.close();
     return 0;
 }

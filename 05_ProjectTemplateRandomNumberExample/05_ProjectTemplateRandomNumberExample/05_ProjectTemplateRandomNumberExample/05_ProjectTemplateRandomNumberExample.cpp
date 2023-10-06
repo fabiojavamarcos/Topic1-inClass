@@ -26,6 +26,6 @@ int main(int argc, const char * argv[]) {
         sum += r;
     }
 
-    cout << "average: " << sum / 100 << endl;
+    cout << "average: " << sum / 10 << endl;
     return 0;
 }
