@@ -43,8 +43,9 @@ void vectorExample() {
 
     // Print the vector elements
     cout << "Vector elements: ";
-    for (const auto &fruit : fruits) {
+    for (auto &fruit : fruits) {
         cout << fruit << " ";
+        fruit = "pineapple";
     }
     cout << endl;
 }
@@ -89,13 +90,13 @@ void arrayOutOfBoundsExample() {
 
 // Example 2: Incorrect usage of a vector
 void incorrectVectorUsageExample() {
-    //vector<int> numbers;
-    vector<int> numbers{ 10, 20, 30 };
+    vector<int> numbers;
+    //vector<int> numbers{ 10, 20, 30 };
   
     //vector<int> vect2(numbers.begin(), numbers.end());
 
     // Attempting to access an element without adding any elements to the vector
-    int value = numbers[0];  // Accessing an empty vector
+    int value = numbers[5];  // Accessing an empty vector
 
     // This will lead to undefined behavior and may crash the program
     cout << "Value: " << value << endl;
