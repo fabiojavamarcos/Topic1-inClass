@@ -39,7 +39,7 @@ void demoPointerVariable()
 void demoArraysAndPointers() {
     int array[] = { 1, 2, 3, 4, 5 };
     int* ptr = &array[0];
-
+    std::cout << ptr << std::endl;
     // Manipulating the array using array itself
     array[2] = 10;
     std::cout << "Array after modification: ";
@@ -49,7 +49,9 @@ void demoArraysAndPointers() {
     std::cout << std::endl;
 
     // Manipulating the array using pointer
+    std::cout << *(ptr + 3) << std::endl;
     *(ptr + 3) = 8;
+    
     std::cout << "Array after pointer manipulation: ";
     for (int i = 0; i < 5; ++i) {
         std::cout << *(ptr + i) << " ";
@@ -58,6 +60,8 @@ void demoArraysAndPointers() {
         }
         else {
             std::cout << "(Mismatch) ";
+            std::cout << (ptr + i) << std::endl;
+            std::cout << &array[i] << std::endl;
         }
     }
     std::cout << std::endl;
