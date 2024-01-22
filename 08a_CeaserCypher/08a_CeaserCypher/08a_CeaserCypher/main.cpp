@@ -13,7 +13,7 @@ char charCypher(char ch, int key);
 
 char charCypher(char ch, int key)
 {
-    if (!isalpha(ch))
+    if (!isalpha(ch)) //<------------------------
         return ch;
     //cout << "ch:" << ch << endl;
     //cout << "key:" << key << endl;
