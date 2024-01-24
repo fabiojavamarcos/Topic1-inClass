@@ -17,6 +17,8 @@ void takeInput(float arr[], int size) {
 
 // Function to calculate average, minimum, and maximum values of an array using pointers
 void calculateStats(float arr[], int size, float& average, float& minimum, float& maximum) {
+    
+    float *ptr = &arr[0];
     if (size == 0) {
         average = 0;
         minimum = 0;
@@ -26,12 +28,14 @@ void calculateStats(float arr[], int size, float& average, float& minimum, float
 
     // Initialize variables for calculations
     float sum = 0;
-    minimum = arr[0];
+    //minimum = arr[0];
+    minimum = *ptr;
     maximum = arr[0];
 
     // Calculate sum, minimum, and maximum
     for (int i = 0; i < size; i++) {
-        sum += arr[i];
+        //sum += arr[i];
+        sum += *(ptr +1);
         if (arr[i] < minimum) {
             minimum = arr[i];
         }

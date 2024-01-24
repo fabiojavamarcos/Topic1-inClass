@@ -49,7 +49,7 @@ void demoArraysAndPointers() {
     std::cout << std::endl;
 
     // Manipulating the array using pointer
-    std::cout << *(ptr + 3) << std::endl;
+    std::cout << "value:" << *(ptr + 3) << std::endl;
     *(ptr + 3) = 8;
     
     std::cout << "Array after pointer manipulation: ";
